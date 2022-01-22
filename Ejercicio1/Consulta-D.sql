@@ -1,0 +1,1 @@
+SELECT brands.brand_id, brands.brand_name, SUM(stocks.quantity) as Total FROM brands INNER JOIN products ON brands.brand_id = products.brand_id INNER JOIN stocks ON products.product_id = stocks.product_id GROUP BY brands.brand_id ORDER BY Total DESC;

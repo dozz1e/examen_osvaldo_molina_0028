@@ -1,0 +1,1 @@
+SELECT categories.category_id, categories.category_name, COUNT(products.category_id) as Total FROM categories INNER JOIN products ON categories.category_id = products.category_id GROUP BY categories.category_id ORDER BY Total DESC;

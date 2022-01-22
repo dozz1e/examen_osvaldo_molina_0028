@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor de Inventario</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/estilos.css" />
+</head>
+<body class="p-md-5">
+  <div class="container">
+    <h1 class="pb-0">Monitor de Inventario</h1>
+    <form>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="tienda" class="mb-0">Tienda</label>
+            <select class="form-control" id="tienda">
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="categoria" class="mb-0">Categoria</label>
+            <select class="form-control" id="categoria">
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="marca" class="mb-0">Marca</label>
+            <select class="form-control" id="marca">
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center align-items-center">
+          <button type="button" class="btn btn-primary" id="buscar">Buscar</button>
+        </div>
+      </div>
+    </form>
+    <table class="table" id="informacion">
+      <thead>
+        <tr>
+          <th scope="col">Tienda</th>
+          <th scope="col">ID Producto</th>
+          <th scope="col">Nombre Producto</th>
+          <th scope="col">Inventario</th>
+          <th scope="col">Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

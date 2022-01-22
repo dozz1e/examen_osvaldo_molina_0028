@@ -1,0 +1,1 @@
+SELECT products.product_id, products.product_name, stocks.quantity FROM categories INNER JOIN products ON categories.category_id = products.category_id INNER JOIN stocks ON products.product_id = stocks.product_id WHERE categories.category_name = 'Electric Bikes';
